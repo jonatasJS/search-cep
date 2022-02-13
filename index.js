@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
 const app = express();
+const port = process.env.PORT || process.env.port || 3000 || 3333 || 80;
 
 app.use(cors());
 app.use(express.static('public'));
@@ -14,6 +15,6 @@ app.get('/v1/cep/:cep', async (req, res) => {
   return await res.json(resData.data);
 });
 
-app.listen(process.env.PORT || process.env.port || 80, () => {
-  console.log('Server started in port ' + process.env.PORT || process.env.port || 80);	
+app.listen(port, () => {
+  console.log('Server started in port ' + port);	
 });
