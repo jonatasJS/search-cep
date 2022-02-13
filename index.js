@@ -2,11 +2,13 @@ const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
 const app = express();
+const router = express.Router();
 const port = process.env.PORT || process.env.port || 3000 || 3333 || 80;
 
 app.use(cors());
 app.use(express.static('public'));
-app.use(express.static('pages')); 
+app.use(express.static('pages'));
+app.use(`/.netlify/functions/api`, router);
 
 app.get('/v1/cep/:cep', async (req, res) => {
   res.setHeader('Content-Type', 'application/json');
