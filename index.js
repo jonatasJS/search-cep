@@ -14,6 +14,6 @@ app.get('/v1/cep/:cep', async (req, res) => {
   return await res.json(resData.data);
 });
 
-app.listen(80, () => {
-  console.log('Server started in port ' + 80);	
+app.listen(process.env.PORT || process.env.port || 80, () => {
+  console.log('Server started in port ' + process.env.PORT || process.env.port || 80);	
 });
