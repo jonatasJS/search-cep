@@ -77,7 +77,13 @@ async function seachCEP(cep) {
     })
     .catch(err => {
       resultCEP.innerHTML = `
-        <input type="text" disabled placeholder="CEP não encontrado" value="CEP não encontrado"></input>
+        <input
+          type="text"
+          disabled
+          placeholder="CEP não encontrado"
+          value="CEP não encontrado"
+          style="margin-bottom: 25px;"
+        ></input>
       `;
       inputCEP.style.border = '1px solid red';
       
