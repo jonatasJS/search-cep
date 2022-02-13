@@ -18,12 +18,11 @@ body {
   width: 40%;
   height: auto;
 
-  margin: auto !important;
   padding: 10px 30px;
   background: #fff;
   max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
+  margin: 100px 0;
+  padding: 50px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
