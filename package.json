@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
+    "build": "node index.js",
     "dev": "nodemon start"
   },
   "keywords": [],
